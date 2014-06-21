@@ -18,9 +18,9 @@ Configuration
 Default configuration options are:
 
 	var config = {
-        backdrop_color : 'rgba(248, 248, 248, 0.80)',
-        loader : null,
-        start : true
+	    backdrop_color : 'rgba(248, 248, 248, 0.80)', // backdrop color
+	    loader : null, // Path to the loader image
+	    start : true  // autostart when initializes
 	}
 
 Methods
