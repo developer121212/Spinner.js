@@ -35,9 +35,13 @@
 
             loader.style.display = 'none';
             loader.style.position = 'absolute';
-            loader.style.width = '100%';
-            loader.style.height = '100%';
             loader.style.backgroundColor = config.backdrop_color;
+            loader.style.width         = '100%';
+            loader.style.height        = '100%';
+
+            loader.style.marginRight  = '-' + scope.css('padding-right');
+            loader.style.marginTop    = '-' + scope.css('padding-top');
+            loader.style.marginBottom = '-' + scope.css('padding-bottom');
 
 
             // the loader container element
