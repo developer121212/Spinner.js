@@ -3,13 +3,15 @@
 * Easly add a loader to your page elements
 *
 * @author Raffaele Izzia izziaraffaele@gmail.com
+*
 */
 (function( $ ){
-	var config;
+    var config;
 
     var configDefault = {
-        backdrop_color : 'rgba(248, 248, 248, 0.80)',
+        backdrop_color : 'rgba(255, 255, 255, 0.80)',
         loader : null,
+        zindex : '1018',
         start : true
     };
 
@@ -39,10 +41,10 @@
             loader.style.width         = '100%';
             loader.style.height        = '100%';
 
-            loader.style.marginRight  = '-' + scope.css('padding-right');
-            loader.style.marginTop    = '-' + scope.css('padding-top');
-            loader.style.marginBottom = '-' + scope.css('padding-bottom');
+            loader.style.top = '0px';
+            loader.style.left = '0px';
 
+            loader.style.zIndex = config.zindex;
 
             // the loader container element
             container = document.createElement('div');
